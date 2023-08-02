@@ -1,0 +1,16 @@
+@import './root';
+body{
+    margin: 0;
+    padding: 0;
+
+    background: #FAFAFA;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.btn-request{
+    @include btn-request;
+  }

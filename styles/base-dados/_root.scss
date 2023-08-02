@@ -1,0 +1,56 @@
+//font-size
+$Size-01-Titulos: 25px;
+$Size-02-subtitulos: 25px;
+$Size-03-paragrafos: 25px;
+
+//cores
+$Cor-01-preto: #000;
+$cor-02-branco: #fff;
+$cor-03-cinza: #303148;
+$cor-04-detalhes: #a2a2aa;
+
+//container desktop
+@mixin containerDesktop {
+  width: 1110px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+//container mobile
+@mixin containerMobile {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 5%;
+}
+@mixin btn-request {
+  color: $cor-02-branco;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: normal;
+  display: flex;
+  padding: 10px 22px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+
+  border-radius: 20px;
+  background: linear-gradient(90deg, #31d069 0%, #2cbac8 100%);
+}
+
+@mixin animacao01 {
+  @keyframes myAnim {
+    0% {
+      background-position: left top;
+      background-size: 100%;
+    }
+
+    100% {
+      background-position: left top;
+      background-size: 150%;
+    }
+  }
+}
